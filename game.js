@@ -3,7 +3,7 @@ var gamePattern = [];
 var userClickedPattern = [];
 var started = false;
 var level = 0;
-var wrongaudio = new Audio("sounds/wrong.mp3")
+var wrongaudio = new Audio("wrong.mp3")
 
 $(document).keypress(function () {
     if (!started) {
@@ -76,7 +76,7 @@ function nextSequence() {
 }
 
 function playSound(colour) {
-    var audio = new Audio("sounds/" + colour + ".mp3");
+    var audio = new Audio(colour + ".mp3");
     audio.play();
 }
 
